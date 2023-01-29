@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* Write your CSS here */
+.first__container__of__digitaltimer {
+  background-color: lightblue;
+  padding: 30px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.background__white__image {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  height: 400px;
+  width: 400px;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.white__container {
+  background-color: white;
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.play__icon_reset__container {
+  display: flex;
+  align-items: center;
+}
+
+.play__reset_image_icon {
+  height: 25px;
+  width: 25px;
+  object-fit: contain;
+}
+
+.right__left__container {
+  display: flex;
+  align-items: center;
+}
+
+.button_play_icon_reset {
+  border: none;
+  background: none;
+}
+.minus__plus__icon {
+  background: none;
+  border: none;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.play_reset_entire_container {
+  display: flex;
+  align-items: center;
+}
+
+.right_part_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.time_limit_setter {
+  background-color: #00d9f5;
+  padding: 8px 20px;
+  border: none;
 }
