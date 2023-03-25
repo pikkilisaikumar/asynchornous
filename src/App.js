@@ -1,24 +1,25 @@
-import React, { Component } from "react";
+import React from "react";
 
-export class App extends Component {
-  state = { count: 0 };
-  handleIncrement = () => {
-    this.setState((prev) => ({ count: prev.count + 1 }));
-    setTimeout(() => {
-      console.log(this.state.count);
-    }, 50);
-    console.log(this.state.count, "outside of set time out");
-  };
-  render() {
-    return (
-      <div>
-        <h1>Count value {this.state.count}</h1>
-        <button type="button" onClick={this.handleIncrement}>
-          Increment
-        </button>
-      </div>
-    );
-  }
-}
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import GetUser from "./GetUser";
+
+import Home from "./Home";
+
+import NewUser from "./NewUser";
+
+const App = () => {
+  return (
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/newuser" exact element={<NewUser />} />
+          <Route path="/getuser" exact element={<GetUser />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
+};
 
 export default App;

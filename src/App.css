@@ -1,75 +1,35 @@
-/* Write your CSS here */
-.first__container__of__digitaltimer {
+.First_container {
   background-color: lightblue;
-  padding: 30px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.background__white__image {
-  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
-  height: 400px;
-  width: 400px;
-  background-size: cover;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+* {
+  margin: 0px;
+  box-sizing: border-box;
 }
-
-.white__container {
-  background-color: white;
-  height: 170px;
-  width: 170px;
-  border-radius: 50%;
+.card-container {
+  background-color: blue;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 400px;
+  max-width: 400px;
+  width: 100%;
 }
-
-.play__icon_reset__container {
-  display: flex;
-  align-items: center;
+.new__user__heading {
+  color: yellow;
+  text-align: center;
 }
-
-.play__reset_image_icon {
-  height: 25px;
-  width: 25px;
-  object-fit: contain;
-}
-
-.right__left__container {
-  display: flex;
-  align-items: center;
-}
-
-.button_play_icon_reset {
-  border: none;
-  background: none;
-}
-.minus__plus__icon {
-  background: none;
-  border: none;
-  margin-right: 10px;
-  font-size: 20px;
-}
-.play_reset_entire_container {
-  display: flex;
-  align-items: center;
-}
-
-.right_part_container {
+.home__container {
+  background-color: lightblue;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.time_limit_setter {
-  background-color: #00d9f5;
-  padding: 8px 20px;
-  border: none;
 }
